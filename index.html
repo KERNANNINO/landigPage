@@ -11,22 +11,22 @@
 
 <body>
     <header>
-        <img src="img\logoOsaka.webp" alt="Logo Osakansai " class="logo">
+        <img src="img\logoOsaka.webp" alt="Logo Osakansai" class="logo">
         <h1 class="titulazoo">OSAKANSAI</h1>
-        <nav>
-            <ul>
-                <li><a href="#informacion">Información</a></li>
-                <li><a href="#especificaciones">Especificaciones</a></li>
-                <li><a href="#calidad">Calidad</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#formulario">Formulario</a></li>
-                <li><a href="#redes">Redes Sociales</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main class="content-container">
-        
+        <nav class="menu">
+            <button class="menu-button" onclick="toggleMenu()">Menú</button>
+            <div class="menu-content" id="menu">
+                <a href="#informacion">Información</a>
+                <a href="#especificaciones">Especificaciones</a>
+                <a href="#calidad">Calidad</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#formulario">Formulario</a>
+                <a href="#redes">Redes Sociales</a>
+            </div>
+        </nav>
 
         <div class="main-content">
             <div class="info-specs">
@@ -35,11 +35,9 @@
                     <div class="producto">
                         <img src="img\amortiguadordelanteroizquierdo.jpg"
                             alt="Amortiguador para Subaru 2024" width="500" height="300">
-                        <p>Nuestro amortiguador para Subaru 2024 está diseñado para ofrecer una conducción suave y cómoda.
-                            Con
-                            materiales de alta calidad, asegura durabilidad y rendimiento óptimo en cualquier condición de
-                            la
-                            carretera.</p>
+                        <p>Nuestro amortiguador para Subaru 2024 está diseñado para ofrecer una conducción suave y
+                            cómoda. Con materiales de alta calidad, asegura durabilidad y rendimiento óptimo en
+                            cualquier condición de la carretera.</p>
                     </div>
                 </section>
 
@@ -63,14 +61,15 @@
                 <section id="calidad" class="section-content large-section">
                     <h2>Calidad y Certificaciones</h2>
                     <p>La calidad del repuesto es sobresaliente. Este componente ha demostrado su eficacia en autos de
-                        competición de alto rendimiento, incluyendo su uso específico en el Audi Quattro 01. Reconocido por
-                        su durabilidad y desempeño excepcional, este repuesto ha sido sometido a las más rigurosas pruebas
-                        en condiciones extremas, garantizando un rendimiento óptimo. La tecnología y los materiales
-                        utilizados en su fabricación aseguran no solo fiabilidad, sino también una longevidad que supera las
-                        expectativas. Es la elección ideal para aquellos que buscan mantener o incluso mejorar las
-                        prestaciones de sus vehículos, confiando en una pieza con un historial probado en el mundo de las
-                        carreras.</p>
-                    <img src="img\audi.jpg" alt="Certificaciones" width="700" height="500">
+                        competición de alto rendimiento, incluyendo su uso específico en el Audi Quattro 01. Reconocido
+                        por su durabilidad y desempeño excepcional, este repuesto ha sido sometido a las más rigurosas
+                        pruebas en condiciones extremas, garantizando un rendimiento óptimo. La tecnología y los
+                        materiales utilizados en su fabricación aseguran no solo fiabilidad, sino también una longevidad
+                        que supera las expectativas. Es la elección ideal para aquellos que buscan mantener o incluso
+                        mejorar las prestaciones de sus vehículos, confiando en una pieza con un historial probado en el
+                        mundo de las carreras.</p>
+                    <img src="img\audi.jpg" alt="Certificaciones" width="700"
+                        height="500">
                 </section>
 
                 <div class="contact-form-wrapper">
@@ -132,8 +131,5 @@
             </div>
         </section>
         <p>Contacto: info@osakansai.com | Tel: +123 456 7890</p>
-        <p>&copy; 2024 Osakansai. Todos los derechos reservados a German Nina Condori.</p>
-    </footer>
-</body>
-
-</html>
+        <p>&copy; 2024 Osakansai. Todos los derechos reserv
+            <script> function toggleMenu() { var menu = document.getElementById("menu"); if (menu.style.display === "block") { menu.style.display = "none"; } else { menu.style.display = "block"; } } window.onclick = function (event) { if (!event.target.matches('.menu-button')) { var dropdowns = document.getElementsByClassName("menu-content"); for (var i = 0; i < dropdowns.length; i++) { var openDropdown = dropdowns[i]; if (openDropdown.style.display === "block") { openDropdown.style.display = "none"; } } } } </script>
